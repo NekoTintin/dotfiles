@@ -1,0 +1,1 @@
+color=$(hyprpicker --format=hex)

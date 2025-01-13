@@ -1,0 +1,46 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+
+profiles:
+  default:
+    dotfiles:
+    - ALL
+
+dotfiles:
+  bashrc:
+    src: .bashrc
+    dst: ~/.bashrc
+  vimrc:
+    src: .vimrc
+    dst: ~/.vimrc
+  update_hypr:
+    src: update_hypr.sh
+    dst: ~/update_hypr.sh
+  ags:
+    src: config/ags
+    dst: ~/.config/ags
+  cava:
+    src: config/cava
+    dst: ~/.config/cava
+  kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
+  rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  hypr:
+    src: config/hypr
+    dst: ~/.config/hypr
+  f_config.yaml:
+    src: dots/config.yaml
+    dst: ~/dots/config.yaml
+  f_config.yaml_1:
+    src: config.yaml
+    dst: ~/config.yaml
